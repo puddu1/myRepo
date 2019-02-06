@@ -1,0 +1,216 @@
+    1  clear
+    2  sudo tee /etc/yum.repos.d/docker.repo <<-'EOF'
+    3  [dockerrepo]
+    4  name=Docker Repository
+    5  baseurl=https://yum.dockerproject.org/repo/main/centos/7/
+    6  enabled=1
+    7  gpgcheck=1
+    8  gpgkey=https://yum.dockerproject.org/gpg
+    9  EOF
+   10  yum install -y docker-engine
+   11  systemctl start docker 
+   12  clear
+   13  docker swarm join > --token SWMTKN-1-51pzs5ax8dmp3h0ic72m9wq9vtagevp1ncrgik115qwo058ie6-3fokbd3onl2i8r7dowtlwh7kb > 10.0.0.1:2377
+   14  docker swarm join > --token SWMTKN-1-51pzs5ax8dmp3h0ic72m9wq9vtagevp1ncrgik115qwo058ie6-3fokbd3onl2i8r7dowtlwh7kb > 10.0.0.1:2376
+   15  docker swarm join > --token SWMTKN-1-51pzs5ax8dmp3h0ic72m9wq9vtagevp1ncrgik115qwo058ie6-3fokbd3onl2i8r7dowtlwh7kb > 10.0.0.1
+   16  docker swarm join     --token SWMTKN-1-470uvdjbg185b3e1zuyhnrzisgw0e7c78hll992r71fsc7z2mn-42aadj4xjha0hjgo13qwnqfdk     10.0.0.1:2377
+   17  clear
+   18  docker swarm join     --token SWMTKN-1-025iofdq8wiohkyx7x3htkaz19imxthf6zan7ol1skvftfgzd5-48uw43ol3dkwjdvo190izx2qf     10.0.0.1:2377
+   19  docker swarm node ls 
+   20  docker node ls
+   21  docker swarm leave
+   22  docker swarm join     --token SWMTKN-1-4mhiojsosmdiyi1byayobrrnjetbetosql891sa1svbus6gzc8-07hbu54pkfmawdkucw5zj542a     10.0.0.1:2377
+   23  docker info
+   24  docker swarm join     --token SWMTKN-1-4mhiojsosmdiyi1byayobrrnjetbetosql891sa1svbus6gzc8-07hbu54pkfmawdkucw5zj542a     10.0.0.1:2377
+   25  docker swarm join --token SWMTKN-1-4mhiojsosmdiyi1byayobrrnjetbetosql891sa1svbus6gzc8-07hbu54pkfmawdkucw5zj542a 10.0.0.1:2377
+   26  docker info
+   27  docker swarm leave
+   28  docker swarm join --token SWMTKN-1-4mhiojsosmdiyi1byayobrrnjetbetosql891sa1svbus6gzc8-07hbu54pkfmawdkucw5zj542a 10.0.0.1:2377
+   29  yum install -y docker-machine
+   30  yum search docker-machine
+   31  yum search docker-*
+   32  yum search docker*
+   33  yum search docker
+   34   docker swarm join     --token SWMTKN-1-4mhiojsosmdiyi1byayobrrnjetbetosql891sa1svbus6gzc8-07hbu54pkfmawdkucw5zj542a     10.0.0.1:2377
+   35  docker run
+   36  docker swarm
+   37  docker network
+   38  docker network create mynet
+   39  docker network ls
+   40  docker swarm init
+   41  docker swarm leave
+   42  docker swarm init
+   43  docker network ls
+   44  docker swarm leave
+   45  docker swarm leave --force
+   46  docker network ls
+   47  sudo service docker start
+   48  docker images
+   49  vi Dockerfile
+   50  ls -l
+   51  pwd
+   52  vi Dockerfile
+   53  docker build -t cent .
+   54  docker run -it cent /bin/bash
+   55  vi Dockerfile
+   56  docker build -t cent .
+   57  docker run -it cent /bin/bash
+   58  vi Dockerfile 
+   59  docker build -t cent .
+   60  docker run -it cent /bin/bash
+   61  wget https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
+   62  yum install -y https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
+   63  yum install -y wget
+   64  yum install -y https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
+   65  wget https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
+   66  ls -l
+   67  vi Dockerfile 
+   68  docker build -t cent .
+   69  docker run -it cent /bin/bash
+   70  vi Dockerfile 
+   71  docker build -t cent:lat .
+   72  ls -l
+   73  tar -xvf jdk-8u201-linux-x64.tar.gz 
+   74  tar -zxvf jdk-8u201-linux-x64.tar.gz 
+   75  tar -gxvf jdk-8u201-linux-x64.tar.gz 
+   76  gunzip jdk-8u201-linux-x64.tar.gz 
+   77  file jdk-8u201-linux-x64.tar.gz
+   78  mkdir raju
+   79  cd raju
+   80  touch a b c
+   81  cd ../
+   82  zip raju
+   83  tar -cvf raju.tar raju
+   84  ls- l
+   85  la -l
+   86  ls- la
+   87  ls -la
+   88  vi Docl
+   89  vi Dockerfile 
+   90  docker build -t cent:lat .
+   91  docker run -it cent:lat /bin/bash
+   92  ls -l
+   93  vi Dockerfile 
+   94  docker images
+   95  docker rmi b9b8b9a6fde8
+   96  docker rmi -f b9b8b9a6fde8
+   97  docker rmi -f 68e99012e335
+   98  docker rmi -f 431691e11a1a
+   99  docker images
+  100  vi Dockerfile 
+  101  docker build -t mem:prit .
+  102  docker run --privileged -itd -e "container=docker" -v /sys/fs/cgroup:/sys/fs/cgroup --name memcached mem:prit /usr/sbin/init
+  103  docker exec -it memcached /bin/bash
+  104  docker ps -a
+  105  ls
+  106  docker images
+  107  docker run -it centos:latest /bin/bash
+  108  docker search mcrouter
+  109  docker images
+  110  docker run -it centos:latest bin/bash
+  111  sudo service docker start
+  112  docker images
+  113  docker run -it centos:latest /bin/bash
+  114  sudo service docker start
+  115  docker images
+  116  docker ps -a
+  117  docker system prune
+  118  docker ps -a
+  119  docker run -it centos:latest
+  120  exit
+  121  yum install git
+  122  git --version
+  123  git status
+  124  git init
+  125  git stauts
+  126  git status
+  127  ls -lrt
+  128  ls -l .git/refs/heads/
+  129  ls -lrt
+  130  git diff
+  131  git diff -staged
+  132  git diff --staged
+  133  git diff --stage
+  134  git status
+  135  git log
+  136  git branch
+  137  git branch raj
+  138  git branch raj_1
+  139  .git/refs/heads/
+  140  ls -l .git/refs/heads/
+  141  git branch --list
+  142  ls -la
+  143  git branch branch1
+  144  cd raju
+  145  ls -l
+  146  git init
+  147  git branch --list
+  148  git branch 
+  149  git pull 
+  150  git clone git@github.com:puddu1/puddu.git
+  151  git clone https://github.com/puddu1/puddu.git
+  152  git branch --list
+  153  git branch b1
+  154  git branch --help
+  155  ls -l
+  156  cd puddu/
+  157  ls -l
+  158  git branch --list
+  159  git branch branch1
+  160  git branch --list
+  161  ls -l
+  162  git branch --list
+  163  cd ../
+  164  ls -l
+  165  mkdir GIT
+  166  cd GIT/
+  167  git init
+  168  git clone git@github.com:puddu1/myRepo.git
+  169  git clone https://github.com/puddu1/myRepo.git
+  170  ls -l
+  171  cd myRepo/
+  172  ls -l
+  173  git branch --list
+  174  vi first.txt
+  175  git status
+  176  git add first.txt 
+  177  git status
+  178  git commit -m "first file in repo" first.txt 
+  179  git push 
+  180  github@123
+  181  git push -u origin https://github.com/puddu1/myRepo.git
+  182  git clone https://github.com/puddu1/myRepo.git
+  183  ls -l
+  184  rm -rf myRepo/
+  185  git push -u origin https://github.com/puddu1/myRepo.git
+  186  git remote -u origin https://github.com/puddu1/myRepo.git
+  187  git remote add origin https://github.com/puddu1/myRepo.git
+  188  git remote add origin_myrepo https://github.com/puddu1/myRepo.git
+  189  git push -u origin_myrepo master
+  190  clear
+  191  git pull
+  192  ls -l
+  193  git branch --list
+  194  ls -l
+  195  git pull br1_file
+  196  git pull 
+  197  ls -la
+  198  git branch branch1
+  199  git branch --list
+  200  git checkout branch1
+  201  git branch --list
+  202  git pull
+  203  git pull https://github.com/puddu1/myRepo.git
+  204  git pull origin_myrepo branch1
+  205  ls -l
+  206  rm 
+  207  rm -rf first.txt 
+  208  git pull origin_myrepo master
+  209  ls -l
+  210  git fetch origin_myrepo master
+  211  ls -l
+  212  git checkout master
+  213  git pull origin_myrepo master
+  214  git fetchl origin_myrepo master
+  215  history
+  216  history >> git_commands_list.txt
